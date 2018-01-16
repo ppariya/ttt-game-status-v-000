@@ -60,7 +60,7 @@ def over?(board)
 end
 
 def winner(board)
-  if WIN_COMBINATIONS.any?{|i| i == won?(board)}
+
     if won?(board).detect{|i| i == "X"}
       "X"
     else won?(board).detect{|i| i == "O"}
