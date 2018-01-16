@@ -61,7 +61,7 @@ end
 
 def winner(board)
     if WIN_COMBINATIONS.any?{|i| i == won?(board)}
-      if won?(board).any?{|i| i == "X"}
+      if won?(board).all?{|i| i == "X"}
         "X"
       else
         "O"
