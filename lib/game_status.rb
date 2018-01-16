@@ -60,13 +60,11 @@ def over?(board)
 end
 
 def winner(board)
-    if WIN_COMBINATIONS.any?{|i| i == won?(board)}
-      if won?(board).all?{|i| i == "X"}
-        "X"
-      else
-        "O"
-      end
-
-    end
-
+  if(draw?(board) || !full?(board)) && !won?(board)
+    return nil
+  elsif (board[won?(board)[0]] == "X")
+    return "X"
+  elsif (board[won?(board)[0]] == "O")
+    return "O"
+  end
 end
