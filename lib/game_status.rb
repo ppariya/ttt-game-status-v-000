@@ -66,5 +66,5 @@ def winner(board)
     else won?(board).detect{|i| i == "O"}
       "O"
     end
-  end
+
 end
