@@ -42,9 +42,9 @@ def full?(board)
 end
 
 def draw?(board)
-  draw = false
+  draw = true
   if full?(board) == true && WIN_COMBINATIONS.any?{|i| i == won?(board)}
-      draw = true
+      draw = false
 
   end
   draw
