@@ -62,9 +62,9 @@ end
 def winner(board)
   if WIN_COMBINATIONS.any?{|i| i == won?(board)}
     if i == "X"
-      return "X"
+      "X"
     else
-      return "O"
+      "O"
     end
   end
 end
