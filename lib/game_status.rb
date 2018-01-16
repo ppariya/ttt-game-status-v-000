@@ -55,6 +55,6 @@ def over?(board)
   if full?(board) == true || WIN_COMBINATIONS.any?{|i| i == won?(board)} || draw?(board)
     true
   else
-    returns
+    false
   end
 end
