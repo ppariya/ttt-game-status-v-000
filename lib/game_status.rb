@@ -58,3 +58,13 @@ def over?(board)
     false
   end
 end
+
+def winner(board)
+  if WIN_COMBINATIONS.any?{|i| i == won?(board)}
+    if i == "X"
+      return "X"
+    else
+      return "O"
+    end
+  end
+end
