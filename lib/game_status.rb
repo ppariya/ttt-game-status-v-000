@@ -50,3 +50,10 @@ def draw?(board)
   end
   draw
 end
+
+def over?(board)
+  if full?(board) == true || WIN_COMBINATIONS.any?{|i| i == won?(board)} || draw?(board)
+    true
+  else
+  returns
+end
