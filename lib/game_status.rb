@@ -46,7 +46,7 @@ def draw?(board)
   if full?(board) == true && WIN_COMBINATIONS.any?{|i| i == won?(board)}
       draw = false
   elsif full?(board) != true
-    draw = false    
+    draw = false
   end
   draw
 end
